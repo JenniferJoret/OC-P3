@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenniferJoret/OC-P3.git"
+  },
+  "author": "Jennifer Joret",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JenniferJoret/OC-P3/issues"
+  },
+  "homepage": "https://github.com/JenniferJoret/OC-P3#readme"
+}
