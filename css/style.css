@@ -421,7 +421,6 @@ footer a {
   flex: 1;
   display: flex;
   flex-flow: row wrap;
-  outline: 3px dashed blue;
   align-items: center;
   justify-content: space-around;
   max-width: 80vw;
@@ -431,6 +430,12 @@ footer a {
   box-shadow: 0 0 10px #ccc;
   width: 45%;
   height: 35vh;
+  margin: 2%;
+}
+@media screen and (max-width: 60em) {
+  .cards__card {
+    width: 80%;
+  }
 }
 
 .soon {

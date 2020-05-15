@@ -6,22 +6,27 @@
     flex: 1;
     display: flex;
     flex-flow: row wrap;
-    outline: 3px dashed blue;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     max-width: 80vw;
     margin-top: 20px;
+
     &__card {
-        box-shadow: 0 0 10px #ccc;
+        @include shadow;
         width: 45%;
         height: 35vh;
+        margin: 2%;
+        @media screen and (max-width:60em){
+            width:80%;
+        }
     }
 }
-.soon{
+
+.soon {
     @include main-theme;
     border: none;
     margin: 30px auto;
     padding: 10px 30px;
     border-radius: 10px;
     width: 200px;
-    }
+}
