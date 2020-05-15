@@ -364,13 +364,33 @@ textarea {
   padding: 0.2em 0;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
 button {
   background-color: #579c87;
   color: #fdcb46;
   border: none;
-  margin: 30px;
+  margin: 30px auto;
   padding: 10px 30px;
   border-radius: 10px;
+  width: 200px;
 }
 
 header {
@@ -382,7 +402,6 @@ header {
   text-align: center;
 }
 header a {
-  text-decoration: none;
   color: #fdcb46;
 }
 
@@ -398,11 +417,30 @@ footer {
   justify-content: space-between;
 }
 footer a {
-  text-decoration: none;
   color: #fdcb46;
 }
 footer a {
   padding: 0 20px;
+}
+
+.note {
+  height: 50px;
+}
+
+.cards {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  outline: 3px dashed blue;
+  align-items: center;
+  justify-content: center;
+  max-width: 80vw;
+  margin-top: 20px;
+}
+.cards__card {
+  box-shadow: 0 0 10px #ccc;
+  width: 45%;
+  height: 35vh;
 }
 
 /*# sourceMappingURL=style.css.map */
