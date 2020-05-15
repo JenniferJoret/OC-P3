@@ -1,0 +1,11 @@
+footer{
+    @include main-theme;
+    @include header-footer;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    a{
+        padding: 0 20px;
+    }
+}

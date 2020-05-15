@@ -1,0 +1,5 @@
+header {
+    @include main-theme;
+    @include header-footer;
+    text-align: center;
+}
