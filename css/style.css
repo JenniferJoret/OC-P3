@@ -435,6 +435,18 @@ footer a {
   flex-direction: column;
   justify-content: space-around;
 }
+.cards__card--menu-note {
+  background-color: #fcdfdb;
+}
+.cards__card--menu-chic {
+  background-color: #fff5fe;
+}
+.cards__card--menu-papilles {
+  background-color: #f9f9f9;
+}
+.cards__card--menu-palette {
+  background-color: #fdfffd;
+}
 @media screen and (max-width: 60em) {
   .cards__card {
     width: 80%;
@@ -449,6 +461,50 @@ footer a {
   padding: 10px 30px;
   border-radius: 10px;
   width: 200px;
+}
+
+.mentions {
+  width: 50vw;
+  padding: 30px;
+  margin: 20px auto;
+}
+@media screen and (max-width: 80em) {
+  .mentions {
+    width: 100%;
+    padding: 0;
+  }
+}
+.mentions__title {
+  font-size: 2em;
+}
+.mentions__inner {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+.mentions__inner__section {
+  margin-top: 50px;
+}
+.mentions__inner__section__title {
+  font-size: 1.2em;
+}
+.mentions__inner__section__content {
+  line-height: 1.5em;
+}
+.mentions__inner__section__content > span {
+  text-decoration: underline #579c87;
+}
+.mentions__inner__section__content > a {
+  color: #579c87;
+  font-weight: bold;
+}
+
+.m-title {
+  text-align: center;
+  padding: 20px;
+  color: #579c87;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

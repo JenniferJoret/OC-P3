@@ -19,9 +19,22 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        &--menu-note{
+            background-color:$background-menu-note;
+        }
+        &--menu-chic{
+            background-color:$background-menu-chic;
+        }
+        &--menu-papilles{
+            background-color:$background-menu-papilles;
+        }
+        &--menu-palette{
+            background-color:$background-menu-palette;
+        }
         @media screen and (max-width:60em){
             width:80%;
         }
+
     }
 }
 
