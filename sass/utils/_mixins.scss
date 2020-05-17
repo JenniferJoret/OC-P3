@@ -1,17 +1,40 @@
-@mixin main-theme{
+@mixin main-theme {
     background-color: $main-background-color;
-    color:$main-color;
+    color: $main-color;
 }
 
-@mixin header-footer{
+@mixin header-footer {
     width: 100%;
     margin: 0;
     padding: 20px 0px;
-    a{
-        color:$main-color;
+    font-family: RationalDisplay;
+
+    a {
+        color: $main-color;
     }
 }
 
-@mixin shadow{
+@mixin cards($title-font, $menu-font, $background, $c-menu-color) {
+    h2 {
+        line-height: normal;
+        font-family: $title-font;
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-size: 1.7em;
+        font-family: $menu-font;
+        color:$c-menu-color;
+    }
+
+    background-color: $background;
+}
+
+@mixin shadow {
     box-shadow: 0 0 10px #ccc;
+}
+@mixin linear-gradient($color1,$color2){
+    background: -webkit-linear-gradient(top left,$color1, $color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,5 +1,6 @@
 .note {
-    height: 50px;
+    height: 35px;
+    margin-bottom: 5px;
 }
 
 .cards {
@@ -8,31 +9,54 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    max-width: 80vw;
+    width: 450px;
     margin-top: 20px;
 
     &__card {
         @include shadow;
-        width: 45%;
-        height: 35vh;
-        margin: 2%;
+        width: 200px;
+        height: 33vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        &--menu-note{
-            background-color:$background-menu-note;
+
+        &--menu-note {
+            @include cards("Devonshire", "SegoePrint", $background-menu-note, $c-menu-note);
+            h2 {
+                font-size: 1.3em;
+                color: $c-menu-note;
+            }
         }
-        &--menu-chic{
-            background-color:$background-menu-chic;
+
+        &--menu-chic {
+            @include cards("CroissantOne", "Dejavu", $background-menu-chic, $c-menu-chic);
+
+            h2 {
+                @include linear-gradient($d-color-chic-1, $d-color-chic-2);
+                font-size: 1em;
+            }
         }
-        &--menu-papilles{
-            background-color:$background-menu-papilles;
+
+        &--menu-delice {
+            @include cards("DancingScript", "SegoePrint", $background-menu-delice, $c-menu-delice);
+
+            h2 {
+                @include linear-gradient($d-color-delice-1, $d-color-delice-2);
+                font-size: 1.5em;
+            }
         }
-        &--menu-palette{
-            background-color:$background-menu-palette;
+
+        &--menu-palette {
+            @include cards("KaushanScript", "SegoePrint", $background-menu-palette, $c-menu-palette);
+
+            h2 {
+                @include linear-gradient($d-color-palette-1, $d-color-palette-2);
+                font-size: 1.4em;
+            }
         }
-        @media screen and (max-width:60em){
-            width:80%;
+
+        @media screen and (max-width:60em) {
+            width: 80%;
         }
 
     }
@@ -40,9 +64,12 @@
 
 .soon {
     @include main-theme;
+    font-family: RationalDisplay;
+    font-size: 1.3em;
+    ;
     border: none;
     margin: 30px auto;
-    padding: 10px 30px;
+    padding: 15px 20px;
     border-radius: 10px;
     width: 200px;
 }

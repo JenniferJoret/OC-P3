@@ -364,6 +364,34 @@ textarea {
   padding: 0.2em 0;
 }
 
+@font-face {
+  font-family: "CroissantOne";
+  src: url("/fonts/Croissant_One/CroissantOne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DancingScript";
+  src: url("/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Devonshire";
+  src: url("/fonts/Devonshire/Devonshire-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KaushanScript";
+  src: url("/fonts/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Dejavu";
+  src: url("/fonts/dejavu/dejavuserif.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RationalDisplay";
+  src: url("/fonts/Rational_display/RationalDisplayDEMO-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "SegoePrint";
+  src: url("/fonts/Segoe_Print/SegoePrint.ttf") format("opentype");
+}
 body {
   min-height: 100vh;
   display: flex;
@@ -389,7 +417,11 @@ header {
   width: 100%;
   margin: 0;
   padding: 20px 0px;
+  font-family: RationalDisplay;
   text-align: center;
+  font-size: 2.5em;
+  letter-spacing: -3px;
+  border-bottom: 1px solid #a1c181;
 }
 header a {
   color: #fdcb46;
@@ -401,10 +433,13 @@ footer {
   width: 100%;
   margin: 0;
   padding: 20px 0px;
+  font-family: RationalDisplay;
   position: sticky;
   bottom: 0;
   display: flex;
   justify-content: space-between;
+  font-size: 1.2em;
+  border-top: 1px solid #a1c181;
 }
 footer a {
   color: #fdcb46;
@@ -414,7 +449,8 @@ footer a {
 }
 
 .note {
-  height: 50px;
+  height: 35px;
+  margin-bottom: 5px;
 }
 
 .cards {
@@ -423,14 +459,13 @@ footer a {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  max-width: 80vw;
+  width: 450px;
   margin-top: 20px;
 }
 .cards__card {
   box-shadow: 0 0 10px #ccc;
-  width: 45%;
-  height: 35vh;
-  margin: 2%;
+  width: 200px;
+  height: 33vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -438,14 +473,76 @@ footer a {
 .cards__card--menu-note {
   background-color: #fcdfdb;
 }
+.cards__card--menu-note h2 {
+  line-height: normal;
+  font-family: "Devonshire";
+}
+.cards__card--menu-note h3 {
+  margin-top: 20px;
+  font-size: 1.7em;
+  font-family: "SegoePrint";
+  color: #3a1419;
+}
+.cards__card--menu-note h2 {
+  font-size: 1.3em;
+  color: #3a1419;
+}
 .cards__card--menu-chic {
   background-color: #fff5fe;
 }
-.cards__card--menu-papilles {
+.cards__card--menu-chic h2 {
+  line-height: normal;
+  font-family: "CroissantOne";
+}
+.cards__card--menu-chic h3 {
+  margin-top: 20px;
+  font-size: 1.7em;
+  font-family: "Dejavu";
+  color: #c77529;
+}
+.cards__card--menu-chic h2 {
+  background: -webkit-linear-gradient(top left, #D8862F, #915BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1em;
+}
+.cards__card--menu-delice {
   background-color: #f9f9f9;
+}
+.cards__card--menu-delice h2 {
+  line-height: normal;
+  font-family: "DancingScript";
+}
+.cards__card--menu-delice h3 {
+  margin-top: 20px;
+  font-size: 1.7em;
+  font-family: "SegoePrint";
+  color: #447ec0;
+}
+.cards__card--menu-delice h2 {
+  background: -webkit-linear-gradient(top left, #0236E1, #0889FB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
 }
 .cards__card--menu-palette {
   background-color: #fdfffd;
+}
+.cards__card--menu-palette h2 {
+  line-height: normal;
+  font-family: "KaushanScript";
+}
+.cards__card--menu-palette h3 {
+  margin-top: 20px;
+  font-size: 1.7em;
+  font-family: "SegoePrint";
+  color: #72c057;
+}
+.cards__card--menu-palette h2 {
+  background: -webkit-linear-gradient(top left, #3D923A, #C0FF81);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4em;
 }
 @media screen and (max-width: 60em) {
   .cards__card {
@@ -456,9 +553,11 @@ footer a {
 .soon {
   background-color: #579c87;
   color: #fdcb46;
+  font-family: RationalDisplay;
+  font-size: 1.3em;
   border: none;
   margin: 30px auto;
-  padding: 10px 30px;
+  padding: 15px 20px;
   border-radius: 10px;
   width: 200px;
 }
