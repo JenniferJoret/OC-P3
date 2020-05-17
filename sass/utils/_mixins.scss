@@ -42,9 +42,16 @@
 //ANIMATIONS
 @mixin wiggle{
     @keyframes wiggle{
-        10%, 90% { transform: translatex(-1px); }
+        10%, 90% { transform: translatex(-3px); }
         20%, 80%{ transform: translatex(2px); }
         30%, 50%, 70% { transform: translatex(-4px); }
-        40%, 60%, 100% { transform: translatex(4px); }
+        40%, 60% { transform: translatex(4px); }
+    }
+}
+@mixin dots{
+    @keyframes dots{
+        0% {transform: scaleY(.5); height: 30px;}
+        50% {transform: scaleY(1) translateY(-5px);}
+        100%{transform: scaleY(.5); height: 30px;}
     }
 }

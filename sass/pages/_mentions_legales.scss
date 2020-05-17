@@ -1,8 +1,8 @@
 .mentions {
     width: 50vw;
-    padding: 30px;
+    padding: 30px 0;
     margin: 20px auto;
-
+font-family: dejavu;
     @media screen and (max-width:80em) {
         width: 100%;
         padding: 0;
@@ -18,9 +18,9 @@
         text-align: left;
 
         &__section {
-            margin-top: 50px;
-
+            margin: 30px auto;
             &__title {
+                margin: 15px auto;
                 font-size: 1.2em;
             }
 
@@ -37,12 +37,16 @@
                 font-weight: bold;
             }
         }
+        @media screen and (max-width:80em) {
+            width: 90%;
+            padding: 0;
+        }
     }
 }
 
 .m-title {
     text-align: center;
-    padding: 20px;
+    padding: 1vw;
     color: $main-background-color;
     font-weight: bold;
     text-decoration: underline;
