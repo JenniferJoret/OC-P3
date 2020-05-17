@@ -504,7 +504,7 @@ footer a {
   background: -webkit-linear-gradient(top left, #D8862F, #915BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 .cards__card--menu-delice {
   background-color: #f9f9f9;
@@ -523,7 +523,7 @@ footer a {
   background: -webkit-linear-gradient(top left, #0236E1, #0889FB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .cards__card--menu-palette {
   background-color: #fdfffd;
@@ -542,12 +542,22 @@ footer a {
   background: -webkit-linear-gradient(top left, #3D923A, #C0FF81);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 @media screen and (max-width: 60em) {
   .cards__card {
     width: 80%;
   }
+}
+.cards__card > :nth-child(1) {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+  opacity: 1;
+}
+.cards__card:hover > :nth-child(1) {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 
 .soon {
