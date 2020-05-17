@@ -366,31 +366,31 @@ textarea {
 
 @font-face {
   font-family: "CroissantOne";
-  src: url("/fonts/Croissant_One/CroissantOne-Regular.ttf") format("truetype");
+  src: url("../fonts/Croissant_One/CroissantOne-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "DancingScript";
-  src: url("/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Devonshire";
-  src: url("/fonts/Devonshire/Devonshire-Regular.ttf") format("truetype");
+  src: url("../fonts/Devonshire/Devonshire-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "KaushanScript";
-  src: url("/fonts/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype");
+  src: url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Dejavu";
-  src: url("/fonts/dejavu/dejavuserif.ttf") format("truetype");
+  src: url("../fonts/dejavu/dejavuserif.ttf") format("truetype");
 }
 @font-face {
   font-family: "RationalDisplay";
-  src: url("/fonts/Rational_display/RationalDisplayDEMO-SemiBold.otf") format("opentype");
+  src: url("../fonts/Rational_display/RationalDisplayDEMO-SemiBold.otf") format("opentype");
 }
 @font-face {
   font-family: "SegoePrint";
-  src: url("/fonts/Segoe_Print/SegoePrint.ttf") format("opentype");
+  src: url("../fonts/Segoe_Print/SegoePrint.ttf") format("opentype");
 }
 body {
   min-height: 100vh;
