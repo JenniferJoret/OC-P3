@@ -1,4 +1,4 @@
-footer{
+footer {
     @include main-theme;
     @include header-footer;
     position: sticky;
@@ -7,7 +7,15 @@ footer{
     justify-content: space-between;
     font-size: 1.2em;
     border-top: 1px solid $main-border-color;
-    a{
+    overflow: hidden;
+
+    a {
         padding: 0 20px;
+
+        &:hover {
+
+            @include wiggle;
+            animation: wiggle .5s infinite;
+        }
     }
 }

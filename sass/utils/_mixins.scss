@@ -33,10 +33,18 @@
 @mixin shadow {
     box-shadow: 0 0 10px #ccc;
 }
+
 @mixin linear-gradient($color1,$color2){
     background: -webkit-linear-gradient(top left,$color1, $color2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 //ANIMATIONS
+@mixin wiggle{
+    @keyframes wiggle{
+        10%, 90% { transform: translatex(-1px); }
+        20%, 80%{ transform: translatex(2px); }
+        30%, 50%, 70% { transform: translatex(-4px); }
+        40%, 60%, 100% { transform: translatex(4px); }
+    }
+}
