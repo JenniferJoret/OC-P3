@@ -386,7 +386,7 @@ textarea {
 }
 @font-face {
   font-family: "RationalDisplay";
-  src: url("../fonts/Rational_display/RationalDisplayDEMO-SemiBold.otf") format("opentype");
+  src: url("../fonts/Rational_display/RationalDisplayEDITED-SemiBold.otf") format("opentype");
 }
 @font-face {
   font-family: "SegoePrint";
@@ -637,25 +637,25 @@ footer a:hover {
   }
 }
 
-.menu-note {
+.menu {
   box-shadow: 0 0 10px #ccc;
   background-color: #fcdfdb;
   font-family: "SegoePrint";
   padding: 30px 50px;
   color: #3d1319;
 }
-.menu-note__logo {
+.menu__title {
   font-size: 1.8em;
   font-family: "Devonshire";
 }
-.menu-note__logo__note {
+.menu__title__note {
   width: 40px;
 }
-.menu-note__logo__note--bottom {
+.menu__title__note--bottom {
   width: 1em;
   margin-right: 5px;
 }
-.menu-note__logo--bottom {
+.menu__title--bottom {
   font-size: 1.3em;
   display: inline-flex;
 }

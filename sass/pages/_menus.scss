@@ -16,17 +16,16 @@
     }
 }
 
-.menu-note {
+.menu{
     @include shadow;
     background-color: $background-menu-note;
     font-family: "SegoePrint";
     padding: 30px 50px;
     color: $c-menu-note;
 
-    &__logo {
+    &__title {
         font-size: 1.8em;
         font-family: "Devonshire";
-
         &__note {
             width: 40px;
 
