@@ -3,15 +3,17 @@
     flex-flow: column wrap;
     justify-content: center;
     margin: 1.5em auto;
+
     &__title {
         font-size: 1.4em;
         font-family: "RationalDisplay";
         margin-bottom: 15px;
         font-weight: bold;
     }
+
     @media screen and (min-width: 320px) {
-          font-size: calc(16px + 2 * ((100vw - 320px) / 680));
-        }
+        font-size: calc(16px + 2 * ((100vw - 320px) / 680));
+    }
 }
 
 .menu-note {
@@ -20,13 +22,15 @@
     font-family: "SegoePrint";
     padding: 30px 50px;
     color: $c-menu-note;
+
     &__logo {
         font-size: 1.8em;
         font-family: "Devonshire";
 
         &__note {
             width: 40px;
-            &--bottom{
+
+            &--bottom {
                 width: 1em;
                 margin-right: 5px;
             }
@@ -49,8 +53,32 @@
         font-weight: bold;
         font-size: .8em;
 
+        & h3 {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                right: -5%;
+                width: 0;
+                bottom: -5px;
+                background: $c-menu-note;
+                height: 2px;
+                border-radius: 15px;
+                transition-property: width;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out;
+            }
+
+            &:hover:after {
+                left: -5%;
+                right: auto;
+                width: 110%;
+            }
+        }
+
         &__decor {
             max-width: calc(110px + 15 * ((100vw - 320px) / 680));
+
             &--right {
                 transform: scaleX(-1);
             }

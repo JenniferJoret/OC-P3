@@ -670,6 +670,27 @@ footer a:hover {
   font-weight: bold;
   font-size: 0.8em;
 }
+.menu-section__header h3 {
+  position: relative;
+}
+.menu-section__header h3:after {
+  content: "";
+  position: absolute;
+  right: -5%;
+  width: 0;
+  bottom: -5px;
+  background: #3d1319;
+  height: 2px;
+  border-radius: 15px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.menu-section__header h3:hover:after {
+  left: -5%;
+  right: auto;
+  width: 110%;
+}
 .menu-section__header__decor {
   max-width: calc(110px + 15 * ((100vw - 320px) / 680));
 }
