@@ -1,0 +1,76 @@
+.menu-wrapper {
+    width: fit-content;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 1.5em auto;
+    &__title {
+        font-size: 1.4em;
+        font-family: "RationalDisplay";
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    @media screen and (min-width: 320px) {
+          font-size: calc(16px + 2 * ((100vw - 320px) / 680));
+        }
+}
+
+.menu-note {
+    @include shadow;
+    background-color: $background-menu-note;
+    font-family: "SegoePrint";
+    padding: 30px 50px;
+    color: $c-menu-note;
+    &__logo {
+        font-size: 1.8em;
+        font-family: "Devonshire";
+
+        &__note {
+            width: 40px;
+            &--bottom{
+                width: 1em;
+                margin-right: 5px;
+            }
+        }
+
+        &--bottom {
+            font-size: 1.3em;
+            display: inline-flex;
+        }
+    }
+}
+
+.menu-section {
+    margin: 30px auto 50px auto;
+
+    &__header {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: .8em;
+
+        &__decor {
+            max-width: calc(110px + 15 * ((100vw - 320px) / 680));
+            &--right {
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    &__details {
+        text-align: left;
+        font-size: .6em;
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+
+            & p:nth-of-type(2) {
+                font-weight: bold;
+                font-size: 1em !important;
+                margin-left: 20px;
+            }
+        }
+    }
+}

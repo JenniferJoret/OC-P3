@@ -1,16 +1,18 @@
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
-main{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }

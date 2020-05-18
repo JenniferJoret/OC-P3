@@ -500,11 +500,11 @@ footer a:hover {
   margin-top: 20px;
   font-size: 1.7em;
   font-family: "SegoePrint";
-  color: #3a1419;
+  color: #3d1319;
 }
 .cards__card--menu-note h2 {
   font-size: 1.3em;
-  color: #3a1419;
+  color: #3d1319;
 }
 .cards__card--menu-chic {
   background-color: #fff5fe;
@@ -617,6 +617,78 @@ footer a:hover {
 .soon__dots:nth-of-type(3) {
   margin-left: 0.8em;
   animation-delay: 0.4s;
+}
+
+.menu-wrapper {
+  width: fit-content;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 1.5em auto;
+}
+.menu-wrapper__title {
+  font-size: 1.4em;
+  font-family: "RationalDisplay";
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+@media screen and (min-width: 320px) {
+  .menu-wrapper {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 680));
+  }
+}
+
+.menu-note {
+  box-shadow: 0 0 10px #ccc;
+  background-color: #fcdfdb;
+  font-family: "SegoePrint";
+  padding: 30px 50px;
+  color: #3d1319;
+}
+.menu-note__logo {
+  font-size: 1.8em;
+  font-family: "Devonshire";
+}
+.menu-note__logo__note {
+  width: 40px;
+}
+.menu-note__logo__note--bottom {
+  width: 1em;
+  margin-right: 5px;
+}
+.menu-note__logo--bottom {
+  font-size: 1.3em;
+  display: inline-flex;
+}
+
+.menu-section {
+  margin: 30px auto 50px auto;
+}
+.menu-section__header {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.menu-section__header__decor {
+  max-width: calc(110px + 15 * ((100vw - 320px) / 680));
+}
+.menu-section__header__decor--right {
+  transform: scaleX(-1);
+}
+.menu-section__details {
+  text-align: left;
+  font-size: 0.6em;
+}
+.menu-section__details__inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.menu-section__details__inner p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 1em !important;
+  margin-left: 20px;
 }
 
 .mentions {
