@@ -435,33 +435,24 @@ header a {
   flex-flow: column wrap;
   justify-content: center;
   margin: 1.5em auto;
-  width: 35vw;
-}
-@media screen and (max-width: 85em) {
-  .menu-wrapper {
-    width: 60vw;
-  }
-}
-@media screen and (max-width: 60em) {
-  .menu-wrapper {
-    width: 90vw;
-  }
 }
 .menu-wrapper__title {
   font-size: 1.4em;
   font-family: "RationalDisplay";
   margin-bottom: 15px;
   font-weight: bold;
+  white-space: nowrap;
 }
 @media screen and (min-width: 320px) {
   .menu-wrapper {
-    font-size: calc(16px + 2 * ((100vw - 320px) / 680));
+    font-size: calc(20px + 4 * ((100vw - 320px) / 680));
   }
 }
 
 .menu {
   box-shadow: 0 0 10px #ccc;
   padding: 30px 2vw;
+  max-width: 90vw;
 }
 
 .menu-section {
@@ -469,7 +460,7 @@ header a {
 }
 .menu-section__header {
   width: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
 }
 .menu-section__header__title {
@@ -494,8 +485,11 @@ header a {
   width: 104%;
 }
 .menu-section__header__decor {
+  width: 200px;
+  max-width: auto;
+  align-self: center;
+  padding: 0 10px;
   max-height: 10px;
-  width: calc(80px + 40* ((100vw - 320px) / 680));
 }
 .menu-section__header__decor--right {
   transform: scaleX(-1);

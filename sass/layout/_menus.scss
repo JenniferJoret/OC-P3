@@ -2,31 +2,23 @@
     flex-flow: column wrap;
     justify-content: center;
     margin: 1.5em auto;
-    width: 35vw;
-
-    @media screen and (max-width: 85em) {
-        width: 60vw;
-    }
-
-    @media screen and (max-width: 60em) {
-        width: 90vw;
-    }
-
     &__title {
         font-size: 1.4em;
         font-family: "RationalDisplay";
         margin-bottom: 15px;
         font-weight: bold;
+        white-space:nowrap;
     }
 
     @media screen and (min-width: 320px) {
-        font-size: calc(16px + 2 * ((100vw - 320px) / 680));
+        font-size: calc(20px + 4 * ((100vw - 320px) / 680));
     }
 }
 
 .menu {
     @include shadow;
     padding: 30px 2vw;
+    max-width: 90vw;
 }
 
 .menu-section {
@@ -34,7 +26,7 @@
 
     &__header {
         width: 100%;
-        display: inline-flex;
+        display: flex;
         justify-content: space-between;
 
         &__title {
@@ -45,11 +37,11 @@
         }
 
         &__decor {
-            //max-width: 150px;
+            width: 200px;
+            max-width: auto;
+            align-self: center;
+            padding: 0 10px;
             max-height: 10px;
-
-            width: calc(80px + 40* ((100vw - 320px) / 680));
-
             &--right {
                 transform: scaleX(-1);
             }
