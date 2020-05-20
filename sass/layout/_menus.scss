@@ -17,7 +17,8 @@
 .menu {
     @include shadow;
     padding: 30px 2vw;
-    max-width: 90vw;
+    max-width: 850px;
+    width: auto;
 }
 
 .menu-section {
