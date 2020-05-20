@@ -435,7 +435,7 @@ header a {
   flex-flow: column wrap;
   justify-content: center;
   margin: 1.5em auto;
-  max-width: 35vw;
+  width: 35vw;
 }
 @media screen and (max-width: 85em) {
   .menu-wrapper {
