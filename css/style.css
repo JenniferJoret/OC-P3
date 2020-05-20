@@ -515,6 +515,22 @@ header a {
   font-size: 1.1em;
   float: right;
 }
+.menu-section__details__inner p br {
+  display: none;
+}
+@media screen and (max-width: 60em) {
+  .menu-section__details__inner p {
+    text-align: center;
+    line-height: 2em;
+  }
+  .menu-section__details__inner p span {
+    float: none;
+    padding: 10px 0px;
+  }
+  .menu-section__details__inner p br {
+    display: block;
+  }
+}
 
 footer {
   background-color: #579c87;
