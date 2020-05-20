@@ -441,7 +441,6 @@ header a {
   font-family: "RationalDisplay";
   margin-bottom: 15px;
   font-weight: bold;
-  white-space: nowrap;
 }
 @media screen and (min-width: 320px) {
   .menu-wrapper {
@@ -466,6 +465,7 @@ header a {
 .menu-section__header__title {
   position: relative;
   font-size: 0.75em;
+  white-space: nowrap;
 }
 .menu-section__header__title:after {
   content: "";
@@ -485,8 +485,6 @@ header a {
   width: 104%;
 }
 .menu-section__header__decor {
-  width: 200px;
-  max-width: auto;
   align-self: center;
   padding: 0 10px;
   max-height: 10px;
@@ -819,6 +817,9 @@ footer a:hover {
 }
 .menu-section__header__title--delice3:after {
   background: #349cfb;
+}
+.menu-section__header__decor--palette {
+  width: calc(80px + 100 * ((100vw - 320px) / 680));
 }
 
 .menu--palette {
