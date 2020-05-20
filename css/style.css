@@ -436,7 +436,6 @@ header a {
   justify-content: center;
   margin: 1.5em auto;
   max-width: 35vw;
-  max-width: auto;
 }
 @media screen and (max-width: 85em) {
   .menu-wrapper {
@@ -809,21 +808,6 @@ footer a:hover {
 }
 .menu-section__header__title--delice3:after {
   background: #349cfb;
-}
-
-.menu-wrapper--palette {
-  width: 35vw;
-  max-width: auto;
-}
-@media screen and (max-width: 85em) {
-  .menu-wrapper--palette {
-    width: 60vw;
-  }
-}
-@media screen and (max-width: 60em) {
-  .menu-wrapper--palette {
-    width: 90vw;
-  }
 }
 
 .menu--palette {
