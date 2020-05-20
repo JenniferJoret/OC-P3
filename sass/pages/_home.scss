@@ -9,8 +9,11 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    max-width: 450px;
     margin-top: 20px;
+    max-width: 450px;
+    @media screen and (min-width: 320px) {
+        font-size: calc(26px - 4 * ((100vw - 320px) / 680));
+    }
 
     &__card {
         @include shadow;
@@ -25,7 +28,7 @@
             @include cards("Devonshire", "SegoePrint", $background-menu-note, $c-menu-note);
 
             h2 {
-                font-size: 1.3em;
+                font-size: 1.5em;
                 color: $c-menu-note;
             }
         }
@@ -44,7 +47,7 @@
 
             h2 {
                 @include linear-gradient($d-color-delice-1, $d-color-delice-2);
-                font-size: 1.2em;
+                font-size: 1.5em;
             }
         }
 
@@ -53,7 +56,7 @@
 
             h2 {
                 @include linear-gradient($d-color-palette-1, $d-color-palette-2);
-                font-size: 1.2em;
+                font-size: 1.5em;
             }
         }
 
@@ -63,13 +66,13 @@
 
         &>:nth-child(1) {
             transition: transform 330ms ease-in-out;
-            transform: scale(1);
+            transform: scale(0.8);
             opacity: 1;
         }
 
         &:hover>:nth-child(1) {
             transition: transform 330ms ease-in-out;
-            transform: scale(1.2);
+            transform: scale(1);
             opacity: .8;
         }
     }

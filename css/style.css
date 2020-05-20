@@ -576,8 +576,13 @@ footer a:hover {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  max-width: 450px;
   margin-top: 20px;
+  max-width: 450px;
+}
+@media screen and (min-width: 320px) {
+  .cards {
+    font-size: calc(26px - 4 * ((100vw - 320px) / 680));
+  }
 }
 .cards__card {
   box-shadow: 0 0 10px #ccc;
@@ -602,7 +607,7 @@ footer a:hover {
   color: #3d1319;
 }
 .cards__card--menu-note h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: #3d1319;
 }
 .cards__card--menu-chic {
@@ -641,7 +646,7 @@ footer a:hover {
   background: -webkit-linear-gradient(top left, #0023db, #349cfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 .cards__card--menu-palette {
   background-color: #fdfffd;
@@ -660,7 +665,7 @@ footer a:hover {
   background: -webkit-linear-gradient(top left, #3D923A, #C0FF81);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 @media screen and (max-width: 60em) {
   .cards__card {
@@ -669,12 +674,12 @@ footer a:hover {
 }
 .cards__card > :nth-child(1) {
   transition: transform 330ms ease-in-out;
-  transform: scale(1);
+  transform: scale(0.8);
   opacity: 1;
 }
 .cards__card:hover > :nth-child(1) {
   transition: transform 330ms ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1);
   opacity: 0.8;
 }
 
