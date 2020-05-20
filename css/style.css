@@ -435,6 +435,7 @@ header a {
   flex-flow: column wrap;
   justify-content: center;
   margin: 1.5em auto;
+  max-width: 90vw;
 }
 .menu-wrapper__title {
   font-size: 1.4em;
@@ -444,22 +445,22 @@ header a {
 }
 @media screen and (min-width: 320px) {
   .menu-wrapper {
-    font-size: calc(20px + 4 * ((100vw - 320px) / 680));
+    font-size: calc(18px + 2 * ((100vw - 320px) / 680));
   }
 }
 
 .menu {
   box-shadow: 0 0 10px #ccc;
   padding: 30px 2vw;
-  max-width: 850px;
-  width: auto;
+  width: 90%;
+  margin: auto;
 }
 
 .menu-section {
   margin: 30px auto 50px auto;
 }
 .menu-section__header {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -487,10 +488,12 @@ header a {
 }
 .menu-section__header__decor {
   align-self: center;
-  padding: 0 10px;
+  padding-right: 10px;
   max-height: 10px;
+  width: calc(50px + 60 * ((100vw - 320px) / 680));
 }
 .menu-section__header__decor--right {
+  padding-left: 10px;
   transform: scaleX(-1);
 }
 .menu-section__details {
@@ -498,7 +501,7 @@ header a {
   font-size: 0.6em;
 }
 .menu-section__details--m-list {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .menu-section__details__inner {
@@ -818,9 +821,6 @@ footer a:hover {
 }
 .menu-section__header__title--delice3:after {
   background: #349cfb;
-}
-.menu-section__header__decor--palette {
-  width: calc(80px + 100 * ((100vw - 320px) / 680));
 }
 
 .menu--palette {

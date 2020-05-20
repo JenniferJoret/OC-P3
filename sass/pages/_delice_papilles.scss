@@ -46,12 +46,5 @@
                 background: $d-color-delice-2;
             }
         }
-
-        &__decor {
-            &--palette {
-
-                width: calc(80px + 100 * ((100vw - 320px) / 680));
-            }
-        }
     }
 }

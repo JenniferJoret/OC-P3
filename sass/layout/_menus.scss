@@ -2,6 +2,8 @@
     flex-flow: column wrap;
     justify-content: center;
     margin: 1.5em auto;
+    max-width: 90vw;
+
     &__title {
         font-size: 1.4em;
         font-family: "RationalDisplay";
@@ -10,22 +12,22 @@
     }
 
     @media screen and (min-width: 320px) {
-        font-size: calc(20px + 4 * ((100vw - 320px) / 680));
+        font-size: calc(18px + 2 * ((100vw - 320px) / 680));
     }
 }
 
 .menu {
     @include shadow;
     padding: 30px 2vw;
-    max-width: 850px;
-    width: auto;
+    width: 90%;
+    margin: auto;
 }
 
 .menu-section {
     margin: 30px auto 50px auto;
 
     &__header {
-        width: 100%;
+        max-width: 100%;
         display: flex;
         justify-content: space-between;
 
@@ -39,9 +41,13 @@
 
         &__decor {
             align-self: center;
-            padding: 0 10px;
+            padding-right: 10px;
             max-height: 10px;
+            width: calc(50px + 60 * ((100vw - 320px) / 680));
+
+
             &--right {
+                padding-left: 10px;
                 transform: scaleX(-1);
             }
         }
@@ -52,7 +58,7 @@
         font-size: .6em;
 
         &--m-list {
-            width: 80%;
+            width: 90%;
             margin: auto;
         }
 
@@ -69,6 +75,7 @@
             }
 
             @media screen and (max-width: 60em) {
+
                 //retour à la ligne du prix sur petites résolutions
                 p {
                     text-align: center;
