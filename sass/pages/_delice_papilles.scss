@@ -1,0 +1,54 @@
+.menu-wrapper--delice {
+    width: 29em;
+}
+
+.menu {
+    &--delice {
+        font-size: 1em;
+        background-color: $background-menu-delice;
+        font-family: "SegoePrint";
+    }
+
+    &__title {
+
+        &--delice {
+            margin: 40px auto 60px auto;
+            line-height: normal;
+            font-size: 3em;
+            font-family: "dancingScript";
+            @include linear-gradient($d-color-delice-1, $d-color-delice-2);
+        }
+
+    }
+}
+
+.menu-section {
+    &--delice1 {
+        fill: $d-color-delice-1;
+    }
+
+    &--delice2 {
+        fill: $d-color-delice-1-2;
+    }
+
+    &--delice3 {
+        fill: $d-color-delice-2;
+    }
+
+    &__header {
+
+        &__title {
+            &--delice1:after {
+                background: $d-color-delice-1;
+            }
+
+            &--delice2:after {
+                background: $d-color-delice-1-2;
+            }
+
+            &--delice3:after {
+                background: $d-color-delice-2;
+            }
+        }
+    }
+}

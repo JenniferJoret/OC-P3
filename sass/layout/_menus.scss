@@ -1,0 +1,74 @@
+.menu-wrapper {
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 1.5em auto;
+    max-width: 35vw;
+    max-width: auto;
+    @media screen and (max-width: 85em) {
+        width: 60vw;
+    }
+    @media screen and (max-width: 60em) {
+        width: 90vw;
+    }
+    &__title {
+        font-size: 1.4em;
+        font-family: "RationalDisplay";
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    @media screen and (min-width: 320px) {
+        font-size: calc(16px + 2 * ((100vw - 320px) / 680));
+    }
+}
+
+.menu {
+    @include shadow;
+    padding: 30px 2vw;
+}
+
+.menu-section {
+    margin: 30px auto 50px auto;
+
+    &__header {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+
+        &__title {
+            position: relative;
+            font-size: .75em;
+            //Soulignement des titres
+            @include underline;
+        }
+
+        &__decor {
+            //max-width: 150px;
+            max-height: 10px;
+
+            width: calc(80px + 40* ((100vw - 320px) / 680));
+            &--right {
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    &__details {
+        text-align: left;
+        font-size: .6em;
+
+        &--m-list {
+            width: 80%;
+            margin: auto;
+        }
+
+        &__inner {
+            margin: 20px auto;
+
+            & p span {
+                font-size: 1.1em;
+                float: right;
+            }
+        }
+    }
+}

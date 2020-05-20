@@ -1,0 +1,53 @@
+.menu {
+    &--chic {
+        background-color: $background-menu-chic;
+        font-family: "dejavu";
+    }
+
+    //couleur, taille, et fonte du titre en fonction de la page
+    &__title {
+        &--chic {
+            margin: 40px auto 60px auto;
+            font-size: 1.4em;
+            font-family: "croissantOne";
+            @include linear-gradient($d-color-chic-1, $d-color-chic-2);
+        }
+    }
+
+    .menu-section {
+
+        //gestion couleurs section menus
+        &--chic1 {
+            color: $d-color-chic-1;
+            fill: $d-color-chic-1;
+        }
+
+        &--chic2 {
+            color: $d-color-chic-1-2;
+            fill: $d-color-chic-1-2;
+        }
+
+        &--chic3 {
+            color: $d-color-chic-2;
+            fill: $d-color-chic-2;
+        }
+
+        &__header {
+
+            &__title {
+
+                &--chic1:after {
+                    background: $d-color-chic-1;
+                }
+
+                &--chic2:after {
+                    background: $d-color-chic-1-2;
+                }
+
+                &--chic3:after {
+                    background: $d-color-chic-2;
+                }
+            }
+        }
+    }
+}

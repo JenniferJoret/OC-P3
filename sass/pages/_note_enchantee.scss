@@ -1,0 +1,45 @@
+.menu {
+    &--note {
+        color: $c-menu-note;
+        background-color: $background-menu-note;
+        font-family: "SegoePrint";
+    }
+    &__title {
+        &--note {
+            font-size: 1.8em;
+            font-family: "Devonshire";
+        }
+        &__note {
+            width: 40px;
+            margin: auto;
+            display: flex;
+
+            &--bottom {
+                width: 1em;
+                margin-right: 5px;
+            }
+        }
+
+        &--bottom {
+            font-size: 1.3em;
+            display: inline-flex;
+        }
+    }
+}
+
+.menu-section {
+    &__header {
+
+        &__title {
+            &--note:after {
+                background: $c-menu-note;
+            }
+        }
+
+        &__decor {
+            &--note {
+                fill: $c-menu-note;
+            }
+        }
+    }
+}

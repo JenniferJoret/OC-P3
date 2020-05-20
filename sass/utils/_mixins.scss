@@ -55,3 +55,24 @@
         100%{transform: scaleY(.5); height: 30px;}
     }
 }
+
+@mixin underline{
+    &:after {
+        content: "";
+        position: absolute;
+        right: -2%;
+        width: 0;
+        bottom: -5px;
+        height: 2px;
+        border-radius: 15px;
+        transition-property: width;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover:after {
+        left: -2%;
+        right: auto;
+        width: 104%;
+    }
+}
