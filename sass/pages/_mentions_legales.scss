@@ -31,10 +31,11 @@
                 color: $main-background-color;
                 font-weight: bold;
             }
-        }
-        @media screen and (max-width:80em) {
+            
+        @media screen and (max-width:40em) {
             width: 90%;
             padding: 0;
+        }
         }
     }
 

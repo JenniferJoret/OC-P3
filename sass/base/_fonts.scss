@@ -1,19 +1,4 @@
-@font-face {
-    font-family: "CroissantOne";
-    src: url("../fonts/Croissant_One/CroissantOne-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "DancingScript";
-    src: url("../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Devonshire";
-    src: url("../fonts/Devonshire/Devonshire-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "KaushanScript";
-    src: url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&display=swap');
 @font-face {
     font-family: "Dejavu";
     src: url("../fonts/dejavu/dejavuserif.ttf") format("truetype");

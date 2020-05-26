@@ -9,7 +9,7 @@
         &--chic {
             margin: 40px auto 60px auto;
             font-size: 1.4em;
-            font-family: "croissantOne";
+            font-family: 'Croissant One', cursive;
             @include linear-gradient($d-color-chic-1, $d-color-chic-2);
         }
     }

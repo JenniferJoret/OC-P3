@@ -2,6 +2,7 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -365,22 +366,6 @@ textarea {
 }
 
 @font-face {
-  font-family: "CroissantOne";
-  src: url("../fonts/Croissant_One/CroissantOne-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "DancingScript";
-  src: url("../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Devonshire";
-  src: url("../fonts/Devonshire/Devonshire-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "KaushanScript";
-  src: url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf") format("truetype");
-}
-@font-face {
   font-family: "Dejavu";
   src: url("../fonts/dejavu/dejavuserif.ttf") format("truetype");
 }
@@ -615,7 +600,7 @@ footer a:hover {
 }
 .cards__card--menu-chic h2 {
   line-height: normal;
-  font-family: "CroissantOne";
+  font-family: "Croissant One";
 }
 .cards__card--menu-chic h3 {
   margin-top: 20px;
@@ -634,7 +619,7 @@ footer a:hover {
 }
 .cards__card--menu-delice h2 {
   line-height: normal;
-  font-family: "DancingScript";
+  font-family: "Dancing Script";
 }
 .cards__card--menu-delice h3 {
   margin-top: 20px;
@@ -653,7 +638,7 @@ footer a:hover {
 }
 .cards__card--menu-palette h2 {
   line-height: normal;
-  font-family: "KaushanScript";
+  font-family: "Kaushan Script";
 }
 .cards__card--menu-palette h3 {
   margin-top: 20px;
@@ -730,7 +715,7 @@ footer a:hover {
 .menu__title--chic {
   margin: 40px auto 60px auto;
   font-size: 1.4em;
-  font-family: "croissantOne";
+  font-family: "Croissant One", cursive;
   background: -webkit-linear-gradient(top left, #e38913, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -764,7 +749,7 @@ footer a:hover {
 }
 .menu__title--note {
   font-size: 1.8em;
-  font-family: "Devonshire";
+  font-family: "Devonshire", cursive;
 }
 .menu__title__note {
   width: 40px;
@@ -796,7 +781,7 @@ footer a:hover {
   margin: 40px auto 60px auto;
   line-height: normal;
   font-size: 3em;
-  font-family: "dancingScript";
+  font-family: "Dancing Script", cursive;
   background: -webkit-linear-gradient(top left, #0023db, #349cfb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -830,7 +815,7 @@ footer a:hover {
   margin: 40px auto 60px auto;
   line-height: normal;
   font-size: 3em;
-  font-family: "KaushanScript";
+  font-family: "Kaushan Script", cursive;
   background: -webkit-linear-gradient(top left, #3D923A, #C0FF81);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -873,8 +858,8 @@ footer a:hover {
   color: #579c87;
   font-weight: bold;
 }
-@media screen and (max-width: 80em) {
-  .mentions {
+@media screen and (max-width: 40em) {
+  .mentions__section {
     width: 90%;
     padding: 0;
   }
