@@ -844,8 +844,7 @@ footer a:hover {
 
 .mentions {
   width: 50vw;
-  padding: 30px 0;
-  margin: 20px auto;
+  margin: 10px auto;
   font-family: dejavu;
 }
 @media screen and (max-width: 80em) {
@@ -857,30 +856,27 @@ footer a:hover {
 .mentions__title {
   font-size: 2em;
 }
-.mentions__inner {
-  width: 60%;
-  margin: 0 auto;
+.mentions__section {
+  width: 70%;
   text-align: left;
+  margin: 10px auto;
 }
-.mentions__inner__section {
-  margin: 30px auto;
-}
-.mentions__inner__section__title {
+.mentions__section__title {
   margin: 15px auto;
   font-size: 1.2em;
 }
-.mentions__inner__section__content {
+.mentions__section__content {
   line-height: 1.5em;
 }
-.mentions__inner__section__content > span {
+.mentions__section__content > span {
   text-decoration: underline #579c87;
 }
-.mentions__inner__section__content > a {
+.mentions__section__content > a {
   color: #579c87;
   font-weight: bold;
 }
 @media screen and (max-width: 80em) {
-  .mentions__inner {
+  .mentions {
     width: 90%;
     padding: 0;
   }
