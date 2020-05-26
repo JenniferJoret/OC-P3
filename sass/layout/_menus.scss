@@ -2,7 +2,6 @@
     flex-flow: column wrap;
     justify-content: center;
     margin: 1.5em auto;
-    max-width: 90vw;
 
     &__title {
         font-size: 1.4em;
@@ -19,13 +18,11 @@
 .menu {
     @include shadow;
     padding: 30px 2vw;
-    width: 90%;
     margin: auto;
 }
 
 .menu-section {
     margin: 30px auto 50px auto;
-
     &__header {
         max-width: 100%;
         display: flex;
@@ -73,7 +70,7 @@
                 display: none;
             }
 
-            @media screen and (max-width: 60em) {
+            @media screen and (max-width: 65em) {
 
                 //retour à la ligne du prix sur petites résolutions
                 p {

@@ -435,7 +435,6 @@ header a {
   flex-flow: column wrap;
   justify-content: center;
   margin: 1.5em auto;
-  max-width: 90vw;
 }
 .menu-wrapper__title {
   font-size: 1.4em;
@@ -452,7 +451,6 @@ header a {
 .menu {
   box-shadow: 0 0 10px #ccc;
   padding: 30px 2vw;
-  width: 90%;
   margin: auto;
 }
 
@@ -514,7 +512,7 @@ header a {
 .menu-section__details__inner p br {
   display: none;
 }
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 65em) {
   .menu-section__details__inner p {
     text-align: center;
     line-height: 2em;
