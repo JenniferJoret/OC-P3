@@ -489,24 +489,26 @@ header a {
 }
 .menu-section__details__inner {
   margin: 20px auto;
+  width: 100%;
 }
-.menu-section__details__inner p span {
+.menu-section__details__inner__option {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.4em;
+}
+.menu-section__details__inner__option__prix {
   font-size: 1.1em;
-  float: right;
 }
-.menu-section__details__inner p br {
+.menu-section__details__inner__option br {
   display: none;
 }
 @media screen and (max-width: 65em) {
-  .menu-section__details__inner p {
+  .menu-section__details__inner__option {
+    display: block;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.6em;
   }
-  .menu-section__details__inner p span {
-    float: none;
-    padding: 10px 0px;
-  }
-  .menu-section__details__inner p br {
+  .menu-section__details__inner__option br {
     display: block;
   }
 }

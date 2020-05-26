@@ -23,6 +23,7 @@
 
 .menu-section {
     margin: 30px auto 50px auto;
+
     &__header {
         max-width: 100%;
         display: flex;
@@ -60,32 +61,33 @@
 
         &__inner {
             margin: 20px auto;
+            width: 100%;
 
-            & p span {
-                font-size: 1.1em;
-                float: right;
-            }
-
-            & p br {
-                display: none;
-            }
-
-            @media screen and (max-width: 65em) {
-
-                //retour à la ligne du prix sur petites résolutions
-                p {
-                    text-align: center;
-                    line-height: 2em;
+            &__option {
+                display: flex;
+                justify-content: space-between;
+                line-height: 1.4em;  
+                 
+                &__prix {
+                    font-size: 1.1em;
                 }
 
-                & p span {
-                    float: none;
-                    padding: 10px 0px;
+                & br {
+                    display: none;
                 }
 
-                & p br {
+                @media screen and (max-width: 65em) {
+
+                    //retour à la ligne du prix sur petites résolutions
                     display: block;
+                    text-align: center;
+                    line-height: 1.6em;                    
+                    & br {
+                        display: block;
+                    }
                 }
+
+
             }
         }
     }
