@@ -1,3 +1,4 @@
+//Couleurs du thème général du site
 $main-color:#fdcb46;
 $main-background-color:#579c87;
 $main-border-color:#a1c181;
@@ -6,16 +7,19 @@ $background-menu-note:#fcdfdb;
 $background-menu-chic: #fff5fe;
 $background-menu-delice:#f9f9f9;
 $background-menu-palette:#fdfffd;
-//degradés menus
+//----COULEURS MENUS-----
+//MENU CHIC A LA FRANCAISE - Dégradé (1,2) + couleur intermédiaire (1-2)
 $d-color-chic-1:#e38913;
 $d-color-chic-1-2:#a56799;
 $d-color-chic-2:#6e4ccc;
+//MENU DELICE DES PAPILLES - Dégradé (1,2) + couleur intermédiaire (1-2)
 $d-color-delice-1:#0023db;
 $d-color-delice-1-2:#0670f3;
 $d-color-delice-2:#349cfb;
+//MENU PALETTE DU GOUT - Dégradé
 $d-color-palette-1:#3D923A;
 $d-color-palette-2:#C0FF81;
-//couleur "menu"
+//couleur base cartes "menu"
 $c-menu-note:#3d1319;
 $c-menu-chic:#c77529;
 $c-menu-delice:#447ec0;
