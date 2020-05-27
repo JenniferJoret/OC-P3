@@ -563,8 +563,9 @@ footer a:hover {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20px;
-  max-width: 450px;
+  margin: auto;
+  margin-top: 2vh;
+  max-width: 70%;
 }
 @media screen and (min-width: 320px) {
   .cards {
@@ -573,12 +574,13 @@ footer a:hover {
 }
 .cards__card {
   box-shadow: 0 0 10px #ccc;
-  width: 200px;
-  height: 33vh;
+  width: 40%;
+  height: 30vh;
   margin: 2% auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  white-space: nowrap;
 }
 .cards__card--menu-note {
   background-color: #fcdfdb;
@@ -614,7 +616,7 @@ footer a:hover {
   background: -webkit-linear-gradient(top left, #e38913, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .cards__card--menu-delice {
   background-color: #f9f9f9;
@@ -657,6 +659,7 @@ footer a:hover {
 @media screen and (max-width: 60em) {
   .cards__card {
     width: 80%;
+    white-space: normal;
   }
 }
 .cards__card > :nth-child(1) {
