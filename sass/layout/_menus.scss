@@ -1,4 +1,5 @@
 .menu-wrapper {
+    /*-continent le titre noir + la section menu-*/
     flex-flow: column wrap;
     justify-content: center;
     margin: 1.5em auto;
@@ -9,22 +10,21 @@
         margin-bottom: 15px;
         font-weight: bold;
     }
-
-    @media screen and (min-width: 320px) {
-        font-size: calc(18px + 2 * ((100vw - 320px) / 680));
-    }
 }
 
 .menu {
+    /*-continent le titre principal et les différentes sections du menu-*/
     @include shadow;
     padding: 30px 2vw;
     margin: auto;
 }
 
 .menu-section {
+    /*-contient le titre de section + les plats et prix associés-*/
     margin: 30px auto 50px auto;
 
     &__header {
+        /*-contient le titre de section + les shapes-*/
         max-width: 100%;
         display: flex;
         justify-content: space-between;
@@ -41,53 +41,45 @@
             align-self: center;
             padding-right: 10px;
             max-height: 10px;
+            /*-calcul de la taille en fonction de la résolution-*/
             width: calc(50px + 60 * ((100vw - 320px) / 680));
 
             &--right {
-                padding-left: 10px;
+                /*-position miroir des shapes de droite-*/
                 transform: scaleX(-1);
             }
         }
     }
 
     &__details {
+        /*-contient les listes des différents plats et les prix associés-*/
         text-align: left;
         font-size: .6em;
 
         &--m-list {
+            /*-réduction le la largeur de certaines listes-*/
             width: 90%;
             margin: auto;
         }
 
         &__inner {
+            /*-élément de liste contenant le plat et le prix associé-*/
             margin: 20px auto;
             width: 100%;
 
             &__option {
                 display: flex;
                 justify-content: space-between;
-                line-height: 1.4em;  
-                 
+                line-height: 1.4em;
+
                 &__prix {
                     font-size: 1.1em;
                 }
 
                 & br {
+                    /*-cache le retour à la ligne des prix sur grandes résos-*/
                     display: none;
                 }
-
-                @media screen and (max-width: 65em) {
-
-                    //retour à la ligne du prix sur petites résolutions
-                    display: block;
-                    text-align: center;
-                    line-height: 1.6em;                    
-                    & br {
-                        display: block;
-                    }
-                }
-
-
             }
         }
     }

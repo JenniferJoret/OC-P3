@@ -1,4 +1,5 @@
 body {
+  /*-gestion du corps de la page-*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,6 +8,7 @@ body {
 }
 
 main {
+  /*-gestion du contenu de la page-*/
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -17,6 +19,6 @@ a {
   text-decoration: none;
 }
 
-.text-bold{
+.text-bold {
   font-weight: bold;
 }

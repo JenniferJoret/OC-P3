@@ -1,0 +1,64 @@
+@media screen and (min-width: 320px) {
+
+    //calcul de fontes responsives
+    .menu-wrapper {
+        font-size: calc(18px + 2 * ((100vw - 320px) / 680));
+    }
+
+    .cards {
+        font-size: calc(26px - 4 * ((100vw - 320px) / 680));
+    }
+}
+
+
+
+@media screen and (max-width: 65em) {
+    .menu-section {
+        &__details {
+            &__inner {
+                &__option {
+                    //retour à la ligne du prix sur petites résolutions
+                    display: block;
+                    text-align: center;
+                    line-height: 1.6em;
+
+                    & br {
+                        //affichage du retour à la ligne du prix
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .cards {
+        &__card {
+            /*-retour à la ligne du titre si besoin sur les résolutions plus petites-*/
+            white-space: normal;
+        }
+    }
+
+    .mentions {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 40em) {
+
+    .cards {
+
+        /*-les cartes prennent tout l'espace disponible sur petites résolutions-*/
+        &__card {
+            width: 100%;
+            white-space: normal;
+        }
+    }
+
+    .mentions {
+        &__section {
+            width: 90%;
+            padding: 0;
+        }
+    }
+}

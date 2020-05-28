@@ -1,11 +1,13 @@
 .menu {
     &--chic {
+        /*-gestion de la couleur de background et de la fonte générale-*/
         background-color: $background-menu-chic;
         font-family: "dejavu";
     }
 
-    //couleur, taille, et fonte du titre en fonction de la page
     &__title {
+
+        /*-couleur, taille, et fonte du titre en fonction de la page-*/
         &--chic {
             margin: 40px auto 60px auto;
             font-size: 1.4em;
@@ -16,7 +18,7 @@
 
     .menu-section {
 
-        //gestion couleurs section menus
+        /*-gestion couleurs section menus-*/
         &--chic1 {
             color: $d-color-chic-1;
             fill: $d-color-chic-1;
@@ -36,6 +38,7 @@
 
             &__title {
 
+                /*-gestion de la couleur des soulignements de titres-*/
                 &--chic1:after {
                     background: $d-color-chic-1;
                 }

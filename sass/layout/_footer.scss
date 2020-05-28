@@ -1,5 +1,7 @@
 footer {
+    /*-thème général-*/
     @include main-theme;
+    /*-règles communes au header et footer-*/
     @include header-footer;
     position: sticky;
     bottom: 0;
@@ -13,6 +15,7 @@ footer {
         padding: 0 20px;
 
         &:hover {
+            /*-animation wiggle-*/
             @include wiggle;
             animation: wiggle .5s infinite;
         }

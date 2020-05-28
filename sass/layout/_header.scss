@@ -1,5 +1,7 @@
 header {
+    /*-thème général-*/
     @include main-theme;
+    /*-règles communes au header et footer-*/
     @include header-footer;
     text-align: center;
     font-size: 2.5em;

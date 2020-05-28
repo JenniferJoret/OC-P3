@@ -1,5 +1,6 @@
 .menu {
     &--palette {
+        /*-gestion de la couleur de background et de la fonte générale-*/
         font-size: 1em;
         background-color: $background-menu-palette;
         font-family: "SegoePrint";
@@ -7,6 +8,7 @@
 
     &__title {
 
+        /*-couleur, taille, et fonte du titre en fonction de la page-*/
         &--palette {
             margin: 40px auto 60px auto;
             line-height: normal;
@@ -19,9 +21,9 @@
 }
 
 .menu-section {
-
     &__header {
 
+        /*-gestion de la couleur des soulignements de titres-*/
         &__title {
             &--palette:after {
                 background: $c-menu-palette;

@@ -1,14 +1,20 @@
 .menu {
     &--note {
+        /*-gestion de la couleur de background et de la fonte générale-*/
         color: $c-menu-note;
         background-color: $background-menu-note;
         font-family: "SegoePrint";
     }
+
     &__title {
+
+        /*-couleur, taille, et fonte du titre en fonction de la page-*/
         &--note {
             font-size: 1.8em;
             font-family: 'Devonshire', cursive;
         }
+
+        /*-gestion de la taille des svg-*/
         &__note {
             width: 40px;
             margin: auto;
@@ -20,6 +26,7 @@
             }
         }
 
+        /*-gestion du titre d'en bas-*/
         &--bottom {
             font-size: 1.3em;
             display: inline-flex;
@@ -30,11 +37,13 @@
 .menu-section {
     &__header {
 
+        /*-gestion de la couleur des soulignements de titres-*/
         &__title {
             &--note:after {
                 background: $c-menu-note;
             }
         }
+
         &__decor {
             &--note {
                 fill: $c-menu-note;

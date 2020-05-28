@@ -1,45 +1,43 @@
 .mentions {
-    width: 50vw;
+    width: 50%;
     margin: 10px auto;
     font-family: dejavu;
-    @media screen and (max-width:80em) {
-        width: 100%;
-        padding: 0;
-    }
 
+    /*-titre principal-*/
     &__title {
         font-size: 2em;
     }
-        &__section {
-            width: 70%;
-            text-align: left;
-            margin: 10px auto;
-            &__title {
-                margin: 15px auto;
-                font-size: 1.2em;
-            }
 
-            &__content {
-                line-height: 1.5em;
-            }
+    &__section {
+        width: 70%;
+        text-align: left;
+        margin: 10px auto;
 
-            &__content>span {
-                text-decoration: underline $main-background-color;
-            }
-
-            &__content>a {
-                color: $main-background-color;
-                font-weight: bold;
-            }
-            
-        @media screen and (max-width:40em) {
-            width: 90%;
-            padding: 0;
+        /*-titre section-*/
+        &__title {
+            margin: 15px auto;
+            font-size: 1.2em;
         }
+
+        /*-contenu section-*/
+        &__content {
+            line-height: 1.5em;
+        }
+
+        /*-soulignement de certains éléments-*/
+        &__content>span {
+            text-decoration: underline $main-background-color;
+        }
+
+        /*-coloration des liens-*/
+        &__content>a {
+            color: $main-background-color;
+            font-weight: bold;
         }
     }
+}
 
-
+/*-règles appliquées à différents titres-*/
 .m-title {
     text-align: center;
     padding: 1vw;

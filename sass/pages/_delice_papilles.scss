@@ -1,12 +1,13 @@
 .menu {
     &--delice {
+        /*-gestion de la couleur de background et de la fonte générale-*/
         font-size: 1em;
         background-color: $background-menu-delice;
         font-family: "SegoePrint";
     }
 
+    /*-couleur, taille, et fonte du titre en fonction de la page-*/
     &__title {
-
         &--delice {
             margin: 40px auto 60px auto;
             line-height: normal;
@@ -14,11 +15,12 @@
             font-family: 'Dancing Script', cursive;
             @include linear-gradient($d-color-delice-1, $d-color-delice-2);
         }
-
     }
 }
 
 .menu-section {
+
+    /*-gestion couleurs section menus-*/
     &--delice1 {
         fill: $d-color-delice-1;
     }
@@ -34,6 +36,8 @@
     &__header {
 
         &__title {
+
+            /*-gestion de la couleur des soulignements de titres-*/
             &--delice1:after {
                 background: $d-color-delice-1;
             }
