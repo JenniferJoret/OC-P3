@@ -990,10 +990,11 @@ footer a:hover {
     padding: 0;
   }
 }
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 40em), screen and (max-height: 500px) {
   .cards__card {
     /*-les cartes prennent tout l'espace disponible sur petites résolutions-*/
     width: 100%;
+    min-height: 150px;
     white-space: normal;
   }
 
