@@ -581,11 +581,6 @@ footer a:hover {
   flex-direction: column;
   justify-content: space-around;
   white-space: nowrap;
-  /*-gestion carte menu note enchantée*/
-  /*-gestion carte menu chic à la française*/
-  /*-gestion carte menu délice des papilles*/
-  /*-gestion carte menu palette du goût*/
-  /*-animation des titres au survol-*/
 }
 .cards__card--menu-note {
   background-color: #fcdfdb;
@@ -684,7 +679,6 @@ footer a:hover {
   padding: 15px 20px;
   border-radius: 10px;
   width: 200px;
-  /*-animation des points de suspension-*/
 }
 .soon__dots {
   position: absolute;
@@ -720,19 +714,14 @@ footer a:hover {
   background-color: #fff5fe;
   font-family: "dejavu";
 }
-.menu__title {
-  /*-couleur, taille, et fonte du titre en fonction de la page-*/
-}
 .menu__title--chic {
+  /*-couleur, taille, et fonte du titre-*/
   margin: 40px auto 60px auto;
   font-size: 1.4em;
   font-family: "Croissant One", cursive;
   background: -webkit-linear-gradient(top left, #e38913, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.menu .menu-section {
-  /*-gestion couleurs section menus-*/
 }
 .menu .menu-section--chic1 {
   color: #e38913;
@@ -745,9 +734,6 @@ footer a:hover {
 .menu .menu-section--chic3 {
   color: #6e4ccc;
   fill: #6e4ccc;
-}
-.menu .menu-section__header__title {
-  /*-gestion de la couleur des soulignements de titres-*/
 }
 .menu .menu-section__header__title--chic1:after {
   background: #e38913;
@@ -764,11 +750,6 @@ footer a:hover {
   color: #3d1319;
   background-color: #fcdfdb;
   font-family: "SegoePrint";
-}
-.menu__title {
-  /*-couleur, taille, et fonte du titre en fonction de la page-*/
-  /*-gestion de la taille des svg-*/
-  /*-gestion du titre d'en bas-*/
 }
 .menu__title--note {
   font-size: 1.8em;
@@ -788,9 +769,6 @@ footer a:hover {
   display: inline-flex;
 }
 
-.menu-section__header {
-  /*-gestion de la couleur des soulignements de titres-*/
-}
 .menu-section__header__title--note:after {
   background: #3d1319;
 }
@@ -798,9 +776,6 @@ footer a:hover {
   fill: #3d1319;
 }
 
-.menu {
-  /*-couleur, taille, et fonte du titre en fonction de la page-*/
-}
 .menu--delice {
   /*-gestion de la couleur de background et de la fonte générale-*/
   font-size: 1em;
@@ -817,9 +792,6 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-section {
-  /*-gestion couleurs section menus-*/
-}
 .menu-section--delice1 {
   fill: #0023db;
 }
@@ -828,9 +800,6 @@ footer a:hover {
 }
 .menu-section--delice3 {
   fill: #349cfb;
-}
-.menu-section__header__title {
-  /*-gestion de la couleur des soulignements de titres-*/
 }
 .menu-section__header__title--delice1:after {
   background: #0023db;
@@ -848,9 +817,6 @@ footer a:hover {
   background-color: #fdfffd;
   font-family: "SegoePrint";
 }
-.menu__title {
-  /*-couleur, taille, et fonte du titre en fonction de la page-*/
-}
 .menu__title--palette {
   margin: 40px auto 60px auto;
   line-height: normal;
@@ -861,9 +827,6 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-section__header {
-  /*-gestion de la couleur des soulignements de titres-*/
-}
 .menu-section__header__title--palette:after {
   background: #72c057;
 }
@@ -872,31 +835,31 @@ footer a:hover {
   width: 50%;
   margin: 10px auto;
   font-family: dejavu;
-  /*-titre principal-*/
 }
 .mentions__title {
+  /*-titre principal-*/
   font-size: 2em;
 }
 .mentions__section {
   width: 70%;
   text-align: left;
   margin: 10px auto;
-  /*-titre section-*/
-  /*-contenu section-*/
-  /*-soulignement de certains éléments-*/
-  /*-coloration des liens-*/
 }
 .mentions__section__title {
+  /*-titre section-*/
   margin: 15px auto;
   font-size: 1.2em;
 }
 .mentions__section__content {
+  /*-contenu section-*/
   line-height: 1.5em;
 }
 .mentions__section__content > span {
+  /*-soulignement de certains éléments-*/
   text-decoration: underline #579c87;
 }
 .mentions__section__content > a {
+  /*-coloration des liens-*/
   color: #579c87;
   font-weight: bold;
 }
@@ -911,6 +874,7 @@ footer a:hover {
 }
 
 @media screen and (min-width: 320px) {
+  /*-calcul de fontes responsives-*/
   .menu-wrapper {
     font-size: calc(18px + 2 * ((100vw - 320px) / 680));
   }
@@ -921,11 +885,13 @@ footer a:hover {
 }
 @media screen and (max-width: 65em) {
   .menu-section__details__inner__option {
+    /*-retour à la ligne du prix sur petites résolutions-*/
     display: block;
     text-align: center;
     line-height: 1.6em;
   }
   .menu-section__details__inner__option br {
+    /*-affichage du retour à la ligne du prix-*/
     display: block;
   }
 
@@ -940,10 +906,8 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 40em) {
-  .cards {
-    /*-les cartes prennent tout l'espace disponible sur petites résolutions-*/
-  }
   .cards__card {
+    /*-les cartes prennent tout l'espace disponible sur petites résolutions-*/
     width: 100%;
     white-space: normal;
   }

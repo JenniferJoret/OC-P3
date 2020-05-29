@@ -3,8 +3,9 @@
     margin: 10px auto;
     font-family: dejavu;
 
-    /*-titre principal-*/
+
     &__title {
+        /*-titre principal-*/
         font-size: 2em;
     }
 
@@ -13,24 +14,27 @@
         text-align: left;
         margin: 10px auto;
 
-        /*-titre section-*/
+
         &__title {
+            /*-titre section-*/
             margin: 15px auto;
             font-size: 1.2em;
         }
 
-        /*-contenu section-*/
+
         &__content {
+            /*-contenu section-*/
             line-height: 1.5em;
         }
 
-        /*-soulignement de certains éléments-*/
+
         &__content>span {
+            /*-soulignement de certains éléments-*/
             text-decoration: underline $main-background-color;
         }
 
-        /*-coloration des liens-*/
         &__content>a {
+            /*-coloration des liens-*/
             color: $main-background-color;
             font-weight: bold;
         }

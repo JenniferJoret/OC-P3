@@ -8,7 +8,7 @@
 
     &__title {
 
-        /*-couleur, taille, et fonte du titre en fonction de la page-*/
+        //couleur, taille, et fonte du titre en fonction de la page
         &--palette {
             margin: 40px auto 60px auto;
             line-height: normal;
@@ -23,7 +23,7 @@
 .menu-section {
     &__header {
 
-        /*-gestion de la couleur des soulignements de titres-*/
+        //gestion de la couleur des soulignements de titres
         &__title {
             &--palette:after {
                 background: $c-menu-palette;

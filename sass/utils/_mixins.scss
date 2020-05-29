@@ -3,6 +3,7 @@
     background-color: $main-background-color;
     color: $main-color;
 }
+
 //règles qui s'appliquent au header et au footer
 @mixin header-footer {
     width: 100%;
@@ -14,6 +15,7 @@
         color: $main-color;
     }
 }
+
 //mixin pour le design commun des cartes
 @mixin cards($title-font, $menu-font, $background, $c-menu-color) {
     h2 {
@@ -25,41 +27,73 @@
         margin-top: 20px;
         font-size: 1.7em;
         font-family: $menu-font;
-        color:$c-menu-color;
+        color: $c-menu-color;
     }
 
     background-color: $background;
 }
+
 //mixin de l'ombre qu'il y a autour des cartes et des menus
 @mixin shadow {
     box-shadow: 0 0 10px #ccc;
 }
+
 //mixin de dégradé simplifié pour les titres
-@mixin linear-gradient($color1,$color2){
-    background: -webkit-linear-gradient(top left,$color1, $color2);
+@mixin linear-gradient($color1, $color2) {
+    background: -webkit-linear-gradient(top left, $color1, $color2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 //ANIMATIONS
 //animation wiggle pour footer
-@mixin wiggle{
-    @keyframes wiggle{
-        10%, 90% { transform: translatex(-3px); }
-        20%, 80%{ transform: translatex(2px); }
-        30%, 50%, 70% { transform: translatex(-4px); }
-        40%, 60% { transform: translatex(4px); }
+@mixin wiggle {
+    @keyframes wiggle {
+
+        10%,
+        90% {
+            transform: translatex(-3px);
+        }
+
+        20%,
+        80% {
+            transform: translatex(2px);
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translatex(-4px);
+        }
+
+        40%,
+        60% {
+            transform: translatex(4px);
+        }
     }
 }
+
 //animation des points de suspension de "prochainement"
-@mixin dots{
-    @keyframes dots{
-        0% {transform: scaleY(.5); height: 30px;}
-        50% {transform: scaleY(1) translateY(-5px);}
-        100%{transform: scaleY(.5); height: 30px;}
+@mixin dots {
+    @keyframes dots {
+        0% {
+            transform: scaleY(.5);
+            height: 30px;
+        }
+
+        50% {
+            transform: scaleY(1) translateY(-5px);
+        }
+
+        100% {
+            transform: scaleY(.5);
+            height: 30px;
+        }
     }
 }
+
 //animation de soulignement des titres de sections de menus
-@mixin underline{
+@mixin underline {
     &:after {
         content: "";
         position: absolute;

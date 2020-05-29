@@ -26,7 +26,7 @@
         justify-content: space-around;
         white-space: nowrap;
 
-        /*-gestion carte menu note enchantée*/
+        //gestion carte menu note enchantée
         &--menu-note {
             @include cards("Devonshire", "SegoePrint", $background-menu-note, $c-menu-note);
 
@@ -36,7 +36,7 @@
             }
         }
 
-        /*-gestion carte menu chic à la française*/
+        //gestion carte menu chic à la française
         &--menu-chic {
             @include cards("Croissant One", "Dejavu", $background-menu-chic, $c-menu-chic);
 
@@ -46,7 +46,7 @@
             }
         }
 
-        /*-gestion carte menu délice des papilles*/
+        //gestion carte menu délice des papilles
         &--menu-delice {
             @include cards("Dancing Script", "SegoePrint", $background-menu-delice, $c-menu-delice);
 
@@ -56,7 +56,7 @@
             }
         }
 
-        /*-gestion carte menu palette du goût*/
+        //gestion carte menu palette du goût
         &--menu-palette {
             @include cards("Kaushan Script", "SegoePrint", $background-menu-palette, $c-menu-palette);
 
@@ -66,7 +66,7 @@
             }
         }
 
-        /*-animation des titres au survol-*/
+        //animation des titres au survol
         &>:nth-child(1) {
             /*-scale inférieur par défaut et grossissant au survol, comme ça, rien ne dépasse de la carte-*/
             transition: transform 330ms ease-in-out;
@@ -93,7 +93,7 @@
     border-radius: 10px;
     width: 200px;
 
-    /*-animation des points de suspension-*/
+    //animation des points de suspension
     &__dots {
         position: absolute;
         @include dots;

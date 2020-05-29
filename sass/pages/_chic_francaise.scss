@@ -7,8 +7,9 @@
 
     &__title {
 
-        /*-couleur, taille, et fonte du titre en fonction de la page-*/
+
         &--chic {
+            /*-couleur, taille, et fonte du titre-*/
             margin: 40px auto 60px auto;
             font-size: 1.4em;
             font-family: 'Croissant One', cursive;
@@ -18,7 +19,7 @@
 
     .menu-section {
 
-        /*-gestion couleurs section menus-*/
+        //gestion couleurs section menus
         &--chic1 {
             color: $d-color-chic-1;
             fill: $d-color-chic-1;
@@ -38,7 +39,7 @@
 
             &__title {
 
-                /*-gestion de la couleur des soulignements de titres-*/
+                //gestion de la couleur des soulignements de titres
                 &--chic1:after {
                     background: $d-color-chic-1;
                 }

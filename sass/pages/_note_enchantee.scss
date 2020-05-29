@@ -8,13 +8,13 @@
 
     &__title {
 
-        /*-couleur, taille, et fonte du titre en fonction de la page-*/
+        //couleur, taille, et fonte du titre en fonction de la page
         &--note {
             font-size: 1.8em;
             font-family: 'Devonshire', cursive;
         }
 
-        /*-gestion de la taille des svg-*/
+        //gestion de la taille des svg
         &__note {
             width: 40px;
             margin: auto;
@@ -26,7 +26,7 @@
             }
         }
 
-        /*-gestion du titre d'en bas-*/
+        //gestion du titre d'en bas
         &--bottom {
             font-size: 1.3em;
             display: inline-flex;
@@ -37,7 +37,7 @@
 .menu-section {
     &__header {
 
-        /*-gestion de la couleur des soulignements de titres-*/
+        //gestion de la couleur des soulignements de titres
         &__title {
             &--note:after {
                 background: $c-menu-note;

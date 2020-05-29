@@ -6,7 +6,7 @@
         font-family: "SegoePrint";
     }
 
-    /*-couleur, taille, et fonte du titre en fonction de la page-*/
+    //couleur, taille, et fonte du titre en fonction de la page
     &__title {
         &--delice {
             margin: 40px auto 60px auto;
@@ -20,7 +20,7 @@
 
 .menu-section {
 
-    /*-gestion couleurs section menus-*/
+    //gestion couleurs section menus
     &--delice1 {
         fill: $d-color-delice-1;
     }
@@ -37,7 +37,7 @@
 
         &__title {
 
-            /*-gestion de la couleur des soulignements de titres-*/
+            //gestion de la couleur des soulignements de titres
             &--delice1:after {
                 background: $d-color-delice-1;
             }
