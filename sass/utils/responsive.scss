@@ -10,7 +10,19 @@
     }
 }
 
+@media screen and (min-width: 1921px){
+    .menu-wrapper {
+        font-size: calc(20px + 4 * ((100vw - 320px) / 680));
+    }
 
+    .cards {
+        font-size: calc(40px - 4 * ((100vw - 320px) / 680));
+        &__card {
+            /*-les cartes prennent tout l'espace disponible sur petites résolutions-*/
+            min-width: 10vw;
+        }
+    }
+}
 
 @media screen and (max-width: 65em) {
     .menu-wrapper{
