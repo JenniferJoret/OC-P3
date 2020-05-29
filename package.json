@@ -4,7 +4,8 @@
   "description": "Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/main.scss:css/style.css"
+    "sass": "sass --watch sass/main.scss:css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer"
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,12 @@
   },
   "author": "Jennifer Joret",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/JenniferJoret/OC-P3/issues"
   },
-  "homepage": "https://github.com/JenniferJoret/OC-P3#readme"
+  "homepage": "https://github.com/JenniferJoret/OC-P3#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.0"
+  }
 }
