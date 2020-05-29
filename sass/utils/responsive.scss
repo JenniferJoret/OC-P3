@@ -13,6 +13,9 @@
 
 
 @media screen and (max-width: 65em) {
+    .menu-wrapper{
+        width: 90%;
+    }
     .menu-section {
         &__details {
             &__inner {
@@ -45,9 +48,7 @@
 }
 
 @media screen and (max-width: 40em) {
-
     .cards {
-
 
         &__card {
             /*-les cartes prennent tout l'espace disponible sur petites résolutions-*/
