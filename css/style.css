@@ -151,6 +151,8 @@ input[type=search]::-webkit-search-results-decoration {
 input[type=search] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -363,6 +365,8 @@ input[type=radio] {
 input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -598,7 +602,6 @@ footer {
   margin: 0;
   padding: 20px 0px;
   font-family: RationalDisplay;
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   display: flex;
@@ -615,22 +618,7 @@ footer a {
 }
 footer a:hover {
   /*-animation wiggle-*/
-  -webkit-animation: wiggle 0.5s infinite;
-          animation: wiggle 0.5s infinite;
-}
-@-webkit-keyframes wiggle {
-  10%, 90% {
-    transform: translatex(-3px);
-  }
-  20%, 80% {
-    transform: translatex(2px);
-  }
-  30%, 50%, 70% {
-    transform: translatex(-4px);
-  }
-  40%, 60% {
-    transform: translatex(4px);
-  }
+  animation: wiggle 0.5s infinite;
 }
 @keyframes wiggle {
   10%, 90% {
@@ -775,21 +763,7 @@ footer a:hover {
 }
 .soon__dots {
   position: absolute;
-  -webkit-animation: 1s dots infinite ease-in-out;
-          animation: 1s dots infinite ease-in-out;
-}
-@-webkit-keyframes dots {
-  0% {
-    transform: scaleY(0.5);
-    height: 30px;
-  }
-  50% {
-    transform: scaleY(1) translateY(-5px);
-  }
-  100% {
-    transform: scaleY(0.5);
-    height: 30px;
-  }
+  animation: 1s dots infinite ease-in-out;
 }
 @keyframes dots {
   0% {
@@ -809,13 +783,11 @@ footer a:hover {
 }
 .soon__dots:nth-of-type(2) {
   margin-left: 0.5em;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .soon__dots:nth-of-type(3) {
   margin-left: 0.8em;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .menu--chic {
@@ -965,8 +937,7 @@ footer a:hover {
 }
 .mentions__section__content > span {
   /*-soulignement de certains éléments-*/
-  -webkit-text-decoration: underline #579c87;
-          text-decoration: underline #579c87;
+  text-decoration: underline #579c87;
 }
 .mentions__section__content > a {
   /*-coloration des liens-*/
@@ -1045,3 +1016,5 @@ footer a:hover {
     padding: 0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
