@@ -3,8 +3,8 @@
 ## Sommaire
 1. [INTRODUCTION](#introduction)
 2. [COMPOSITION DU SITE](#composition-du-site)
-3. [CARACTERISTIQUES TECHNIQUES](#caracteristiques-techniques)
-4. [COMPATIBILITE](#compatibilite)
+3. [CARACTÉRISTIQUES TECHNIQUES](#caracteristiques-techniques)
+4. [COMPATIBILITÉ](#compatibilite)
 5. [CONTACT](#contact)
 
 ## INTRODUCTION
@@ -33,7 +33,7 @@ carte !
 - Les liens “contact” et “mentions légales” se secouent au survol de la souris,
 - Les titres représentant les catégories entrées, plats, desserts sont soulignés de gauche à droite au survol de la souris .
 
-## CARACTERISTIQUES TECHNIQUES
+## CARACTÉRISTIQUES TECHNIQUES
 
 Le site a été réalisé avec **HTML5** et **SASS**
 
@@ -96,8 +96,9 @@ Un logo et des favicons ont été tout spécialement créés pour le site Ohmyfo
 
 > À cause d'un bug de Chromium (qui a été reporté), les SVG contenant des dégradés ne s'affichent pas sur certains navigateurs.  
 Certains SVG sont donc dans des fichiers séparés (mais toujours dans le même dossier), et seront intégrés au reste des sprites dès que le bug sera corrigé.
+Pour le report du bug, voir [ici](https://bugs.chromium.org/p/chromium/issues/detail?id=751733&q=svg%20sprites&can=2).
 
-## COMPATIBILITE
+## COMPATIBILITÉ
 
 Dans sa première version, publiée le 2/06/20, ce site est compatible avec les dernières versions en date de Chrome, Edge, Firefox, et Safari.
 
