@@ -17,15 +17,15 @@ carte !
 ## COMPOSITION DU SITE
 ### Description du site :
 
-- une page d’accueil contenant :
+- Une page d’accueil contenant :
     - Le header, avec le nom de l'entreprise,
     - Le corps de la page (main), contenant les "cartes" des menus et une section “prochainement”,
     - Le footer, comprenant les liens « Mention légales » et « Contactez-nous ».
 - 4 pages (à ce jour) contenant chacune le menu d’un restaurant (l'utilisateur sera redirigé sur la bonne page en fonction de la carte choisie sur l'accueil), 
 - Une page “Mentions légales”, qui s'ouvre dans une nouvelle fenêtre lors du clic,
 - Un lien “Contactez-nous”, qui renvoie vers l'adresse mail de contact d'ohmyfood!,
-- le header et le footer sont présents sur toutes les pages,
-- le footer rester visible lors du scroll.
+- Le header et le footer sont présents sur toutes les pages,
+- Le footer rester visible lors du scroll.
 
 ### Animations du site :
 - Chaque "carte" de l'accueil est dotée d'une animation, qui fait un zoom sur l'image, avec un effet de fondu,
